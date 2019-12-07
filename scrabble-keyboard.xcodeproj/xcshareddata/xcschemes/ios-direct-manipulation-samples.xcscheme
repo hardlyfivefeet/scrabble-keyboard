@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F71F6B6921B35D0F0093EDDB"
-               BuildableName = "ios-direct-manipulation-samples.app"
-               BlueprintName = "ios-direct-manipulation-samples"
-               ReferencedContainer = "container:ios-direct-manipulation-samples.xcodeproj">
+               BuildableName = "scrabble-keyboard.app"
+               BlueprintName = "scrabble-keyboard"
+               ReferencedContainer = "container:scrabble-keyboard.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,16 +26,25 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES"
-      onlyGenerateCoverageForSpecifiedTargets = "YES"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F71F6B6921B35D0F0093EDDB"
+            BuildableName = "scrabble-keyboard.app"
+            BlueprintName = "scrabble-keyboard"
+            ReferencedContainer = "container:scrabble-keyboard.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F71F6B6921B35D0F0093EDDB"
-            BuildableName = "ios-direct-manipulation-samples.app"
-            BlueprintName = "ios-direct-manipulation-samples"
-            ReferencedContainer = "container:ios-direct-manipulation-samples.xcodeproj">
+            BuildableName = "scrabble-keyboard.app"
+            BlueprintName = "scrabble-keyboard"
+            ReferencedContainer = "container:scrabble-keyboard.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -46,21 +55,10 @@
                BlueprintIdentifier = "F71F6BA021B48B5E0093EDDB"
                BuildableName = "swivelTests.xctest"
                BlueprintName = "swivelTests"
-               ReferencedContainer = "container:ios-direct-manipulation-samples.xcodeproj">
+               ReferencedContainer = "container:scrabble-keyboard.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F71F6B6921B35D0F0093EDDB"
-            BuildableName = "ios-direct-manipulation-samples.app"
-            BlueprintName = "ios-direct-manipulation-samples"
-            ReferencedContainer = "container:ios-direct-manipulation-samples.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -77,13 +75,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F71F6B6921B35D0F0093EDDB"
-            BuildableName = "ios-direct-manipulation-samples.app"
-            BlueprintName = "ios-direct-manipulation-samples"
-            ReferencedContainer = "container:ios-direct-manipulation-samples.xcodeproj">
+            BuildableName = "scrabble-keyboard.app"
+            BlueprintName = "scrabble-keyboard"
+            ReferencedContainer = "container:scrabble-keyboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -96,9 +92,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F71F6B6921B35D0F0093EDDB"
-            BuildableName = "ios-direct-manipulation-samples.app"
-            BlueprintName = "ios-direct-manipulation-samples"
-            ReferencedContainer = "container:ios-direct-manipulation-samples.xcodeproj">
+            BuildableName = "scrabble-keyboard.app"
+            BlueprintName = "scrabble-keyboard"
+            ReferencedContainer = "container:scrabble-keyboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

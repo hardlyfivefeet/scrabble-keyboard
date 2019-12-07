@@ -1,5 +1,5 @@
 import XCTest
-@testable import ios_direct_manipulation_samples
+@testable import scrabble_keyboard
 
 class swivelTests: XCTestCase {
 
