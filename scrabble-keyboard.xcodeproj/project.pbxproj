@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C97A49F123A1C07200016450 /* ScrabbleKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A49F023A1C07200016450 /* ScrabbleKeyboard.swift */; };
+		C9CB1C2323A1AA75002B0C00 /* ScrabbleKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB1C2223A1AA75002B0C00 /* ScrabbleKey.swift */; };
 		C9F50717239B2CBE0002FE04 /* SwivelControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F6B9B21B383640093EDDB /* SwivelControl.swift */; };
 		F71F6B6E21B35D0F0093EDDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F6B6D21B35D0F0093EDDB /* AppDelegate.swift */; };
 		F71F6B7021B35D0F0093EDDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F6B6F21B35D0F0093EDDB /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C97A49F023A1C07200016450 /* ScrabbleKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabbleKeyboard.swift; sourceTree = "<group>"; };
+		C9CB1C2223A1AA75002B0C00 /* ScrabbleKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabbleKey.swift; sourceTree = "<group>"; };
 		F71F6B6A21B35D0F0093EDDB /* scrabble-keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scrabble-keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71F6B6D21B35D0F0093EDDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F71F6B6F21B35D0F0093EDDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				F71F6B7621B35D110093EDDB /* LaunchScreen.storyboard */,
 				F71F6B7921B35D110093EDDB /* Info.plist */,
 				F71F6B9B21B383640093EDDB /* SwivelControl.swift */,
+				C9CB1C2223A1AA75002B0C00 /* ScrabbleKey.swift */,
+				C97A49F023A1C07200016450 /* ScrabbleKeyboard.swift */,
 			);
 			path = "scrabble-keyboard";
 			sourceTree = "<group>";
@@ -202,7 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9CB1C2323A1AA75002B0C00 /* ScrabbleKey.swift in Sources */,
 				C9F50717239B2CBE0002FE04 /* SwivelControl.swift in Sources */,
+				C97A49F123A1C07200016450 /* ScrabbleKeyboard.swift in Sources */,
 				F71F6B7021B35D0F0093EDDB /* ViewController.swift in Sources */,
 				F71F6B6E21B35D0F0093EDDB /* AppDelegate.swift in Sources */,
 			);
