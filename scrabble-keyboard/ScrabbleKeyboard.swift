@@ -8,15 +8,33 @@ import Foundation
     override init(frame: CGRect) {
         self.keys = []
         super.init(frame: frame)
-        setupKeys()
         setupView()
     }
 
     required init?(coder aDecoder: NSCoder) {
         self.keys = []
         super.init(coder: aDecoder)
-        setupKeys()
         setupView()
+    }
+    
+    private func setupView() {
+        setupLabel()
+        setupKeys()
+        setupStackView()
+        setupTextView()
+    }
+    
+    private func setupLabel() {
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
+        label.text = "Drag a key from the keyboard and\ndrop it in the text field to enter text"
+        label.textAlignment = NSTextAlignment.center
+        label.numberOfLines = 2
+        label.translatesAutoresizingMaskIntoConstraints = false
+
+        addSubview(label)
+        label.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.9).isActive = true
+        label.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        label.topAnchor.constraint(equalTo: topAnchor, constant: 75).isActive = true
     }
     
     private func setupKeys() {
@@ -27,7 +45,7 @@ import Foundation
         }
     }
 
-    private func setupView() {
+    private func setupStackView() {
         self.keys.shuffle()
         let stackView1 = UIStackView(arrangedSubviews: Array(self.keys[0...8]))
         stackView1.axis = .horizontal
@@ -72,9 +90,22 @@ import Foundation
         stackView.translatesAutoresizingMaskIntoConstraints = false
 
         addSubview(stackView)
-
         stackView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.9).isActive = true
         stackView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -30).isActive = true
+    }
+    
+    private func setupTextView() {
+        let textView = UITextField(frame: CGRect(x: 0, y: 0, width: 250.0, height: 40))
+        textView.placeholder = "Drag and drop a key here"
+        textView.borderStyle = UITextField.BorderStyle.roundedRect
+        textView.textAlignment = NSTextAlignment.justified
+        textView.isUserInteractionEnabled = false
+        textView.translatesAutoresizingMaskIntoConstraints = false
+
+        addSubview(textView)
+        textView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.7).isActive = true
+        textView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        textView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -100).isActive = true
     }
 }
