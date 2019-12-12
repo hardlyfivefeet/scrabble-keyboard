@@ -8,52 +8,6 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="scrabble_keyboard" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scrabble Keyboard Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTi-4t-uSd">
-                                <rect key="frame" x="66.5" y="20" width="242.5" height="26.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EES-oW-cAG" customClass="ScrabbleKey" customModule="scrabble_keyboard" customModuleProvider="target">
-                                <rect key="frame" x="38" y="329" width="48" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="scrabbleKeyBorderWidth">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="scrabbleKeyLetter" value="B"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qnq-UW-fqP">
-                                <rect key="frame" x="56.5" y="200" width="262.5" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="YTi-4t-uSd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1bS-KR-sBU"/>
-                            <constraint firstItem="qnq-UW-fqP" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.7" id="7uz-P7-pif"/>
-                            <constraint firstItem="qnq-UW-fqP" firstAttribute="top" secondItem="YTi-4t-uSd" secondAttribute="bottom" constant="153.5" id="Hrk-KA-KJV"/>
-                            <constraint firstItem="YTi-4t-uSd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="iMV-bm-TQv"/>
-                            <constraint firstItem="qnq-UW-fqP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tfp-ht-rp5"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-404" y="71"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="xca-FA-alr">
             <objects>
                 <viewController id="sXt-5s-1TA" sceneMemberID="viewController">
