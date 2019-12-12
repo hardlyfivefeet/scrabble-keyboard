@@ -21,9 +21,9 @@ import Foundation
         setupLabel()
         setupKeys()
         setupStackView()
-        setupTextView()
+        setupTextField()
     }
-    
+
     private func setupLabel() {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
         label.text = "Drag a key from the keyboard and\ndrop it in the text field to enter text"
@@ -95,17 +95,17 @@ import Foundation
         stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -30).isActive = true
     }
     
-    private func setupTextView() {
-        let textView = UITextField(frame: CGRect(x: 0, y: 0, width: 250.0, height: 40))
-        textView.placeholder = "Drag and drop a key here"
-        textView.borderStyle = UITextField.BorderStyle.roundedRect
-        textView.textAlignment = NSTextAlignment.justified
-        textView.isUserInteractionEnabled = false
-        textView.translatesAutoresizingMaskIntoConstraints = false
+    private func setupTextField() {
+        let textField = UITextField(frame: CGRect(x: 0, y: 0, width: 250.0, height: 40))
+        textField.placeholder = "Drag and drop a key here"
+        textField.borderStyle = UITextField.BorderStyle.roundedRect
+        textField.textAlignment = NSTextAlignment.justified
+        textField.inputView = UIView() // this disables the keyboard pop up!
+        textField.translatesAutoresizingMaskIntoConstraints = false
 
-        addSubview(textView)
-        textView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.7).isActive = true
-        textView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        textView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -100).isActive = true
+        addSubview(textField)
+        textField.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.7).isActive = true
+        textField.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        textField.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -100).isActive = true
     }
 }

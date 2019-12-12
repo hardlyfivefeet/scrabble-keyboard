@@ -2,22 +2,21 @@ import Foundation
 import UIKit
 
 @IBDesignable class ScrabbleKey: UIView {
-    // The component's model.
+
     var currentTouch: UITouch? = nil
-    
     // We will manipulate a drawing layer as the component's "view."
     var scrabbleLayer = CALayer()
     var textLayer = DynamicTextLayer()
-    
+
     @IBInspectable var height: CGFloat = 35
 
-     override var intrinsicContentSize: CGSize {
-         return CGSize(width: height, height: height)
-     }
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: height, height: height)
+    }
 
-     override func prepareForInterfaceBuilder() {
-          invalidateIntrinsicContentSize()
-     }
+    override func prepareForInterfaceBuilder() {
+        invalidateIntrinsicContentSize()
+    }
 
     // The "inspectable" properties of the view will allow editing via Xcode!
     @IBInspectable var scrabbleKeyBorderColor: UIColor = .black {
@@ -49,15 +48,23 @@ import UIKit
             layoutSubviews()
         }
     }
+    
+    private func enableDrag() {
+        let dragInteraction = UIDragInteraction(delegate: self)
+        self.addInteraction(dragInteraction)
+        dragInteraction.isEnabled = true
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         layoutSubviews()
+        enableDrag()
     }
 
     required init(coder: NSCoder) {
         super.init(coder: coder)!
         layoutSubviews()
+        enableDrag()
     }
 
     override func layoutSubviews() {
@@ -73,6 +80,16 @@ import UIKit
         scrabbleLayer.frame = bounds
         layer.addSublayer(scrabbleLayer)
         layer.addSublayer(textLayer)
+    }
+}
+
+extension ScrabbleKey: UIDragInteractionDelegate {
+    func dragInteraction(_ interaction: UIDragInteraction, itemsForBeginning session: UIDragSession) -> [UIDragItem] {
+        let letter = scrabbleKeyLetter
+        let provider = NSItemProvider(object: letter as NSString)
+        let item = UIDragItem(itemProvider: provider)
+        item.localObject = letter
+        return [item]
     }
 }
 
