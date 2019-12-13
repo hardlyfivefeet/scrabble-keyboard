@@ -1,7 +1,7 @@
 import XCTest
 
 class ScrabbleKeyboardUITests: XCTestCase {
-    
+
     let app = XCUIApplication()
 
     override func setUp() {
@@ -21,10 +21,10 @@ class ScrabbleKeyboardUITests: XCTestCase {
         LKey.press(forDuration: 0.5, thenDragTo: textField)
         let OKey = app.otherElements["O"]
         OKey.press(forDuration: 0.5, thenDragTo: textField)
-        
+
         XCTAssertTrue(textField.value as? String == "HELLO")
     }
-    
+
     func testScrabbleKeyboardEnterSpaceCorrectly() {
         let textField = app.textFields["textField"]
 
@@ -39,7 +39,7 @@ class ScrabbleKeyboardUITests: XCTestCase {
 
         XCTAssertTrue(textField.value as? String == "Y E E")
     }
-    
+
     func testScrabbleKeyboardDeletesLetterCorrectly() {
         let textField = app.textFields["textField"]
 

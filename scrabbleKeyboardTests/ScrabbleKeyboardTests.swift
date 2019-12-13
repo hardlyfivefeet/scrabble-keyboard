@@ -20,10 +20,10 @@ class ScrabbleKeyboardTests: XCTestCase {
 
         scrabbleKey.scrabbleKeyBorderWidth = 100
         XCTAssertEqual(scrabbleKey.scrabbleLayer.borderWidth, 100, "Border width should go to scrabble layer")
-        
+
         scrabbleKey.scrabbleKeyLetter = "C"
         XCTAssertEqual(scrabbleKey.textLayer.string as! NSString, "C", "Letter should go to text layer")
-        
+
         scrabbleKey.scrabbleKeyLetterColor = .green
         XCTAssertEqual(scrabbleKey.textLayer.foregroundColor, UIColor.green.cgColor, "Text color should go to text layer")
     }

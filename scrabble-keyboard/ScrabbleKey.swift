@@ -29,7 +29,7 @@ import UIKit
             layoutSubviews()
         }
     }
-    
+
     @IBInspectable var scrabbleKeyLetter: String = "A" {
         didSet {
             layoutSubviews()
@@ -41,13 +41,13 @@ import UIKit
             layoutSubviews()
         }
     }
-    
+
     @IBInspectable var scrabbleKeyLetterColor: UIColor = .black {
         didSet {
             layoutSubviews()
         }
     }
-    
+
     private func enableDrag() {
         let dragInteraction = UIDragInteraction(delegate: self)
         self.addInteraction(dragInteraction)
@@ -94,7 +94,7 @@ extension ScrabbleKey: UIDragInteractionDelegate {
 
 // Credit to this Stack Overflow thread for vertically align the letter in the key:
 // https://stackoverflow.com/questions/4765461/vertically-align-text-in-a-catextlayer
-class DynamicTextLayer : CATextLayer {
+class DynamicTextLayer: CATextLayer {
     // REF: http://lists.apple.com/archives/quartz-dev/2008/Aug/msg00016.html
     // CREDIT: David Hoerl - https://github.com/dhoerl
     // USAGE: To fix the vertical alignment issue that currently exists within the CATextLayer class. Change made to the yDiff calculation.
