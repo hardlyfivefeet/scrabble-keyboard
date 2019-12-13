@@ -101,6 +101,7 @@ import Foundation
         textField.textAlignment = NSTextAlignment.justified
         textField.inputView = UIView() // this disables the keyboard pop up!
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.tintColor = .clear
 
          // this disables the default drop interaction
         if let defaultDrop = textField.textDropInteraction {
