@@ -40,6 +40,7 @@ import Foundation
         for char in "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" {
             let newKey = ScrabbleKey()
             newKey.scrabbleKeyLetter = String(char)
+            newKey.accessibilityIdentifier = String(char)
             self.keys.append(newKey)
         }
     }
@@ -68,12 +69,15 @@ import Foundation
         
         let commaKey = ScrabbleKey()
         commaKey.scrabbleKeyLetter = ","
+        commaKey.accessibilityIdentifier = "Comma"
         
         let deleteKey = ScrabbleKey()
         deleteKey.scrabbleKeyLetter = "Delete"
+        deleteKey.accessibilityIdentifier = "Delete"
         
         let spaceKey = ScrabbleKey()
         spaceKey.scrabbleKeyLetter = "Space"
+        spaceKey.accessibilityIdentifier = "Space"
         spaceKey.widthAnchor.constraint(equalToConstant: 100).isActive = true
         
         let stackView5 = UIStackView(arrangedSubviews: [commaKey, spaceKey, deleteKey])
@@ -102,6 +106,7 @@ import Foundation
         textField.inputView = UIView() // this disables the keyboard pop up!
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.tintColor = .clear
+        textField.accessibilityIdentifier = "textField"
 
          // this disables the default drop interaction
         if let defaultDrop = textField.textDropInteraction {
