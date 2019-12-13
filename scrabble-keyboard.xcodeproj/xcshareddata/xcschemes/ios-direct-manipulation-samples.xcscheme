@@ -58,6 +58,16 @@
                ReferencedContainer = "container:scrabble-keyboard.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C95291BE23A4310C0069ADB4"
+               BuildableName = "scrabble-keyboardUITests.xctest"
+               BlueprintName = "scrabble-keyboardUITests"
+               ReferencedContainer = "container:scrabble-keyboard.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

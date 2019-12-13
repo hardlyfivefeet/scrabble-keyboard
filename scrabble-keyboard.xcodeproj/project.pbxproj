@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C95291DE23A431C00069ADB4 /* scrabble_keyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95291DD23A431C00069ADB4 /* scrabble_keyboardUITests.swift */; };
 		C97A49F123A1C07200016450 /* ScrabbleKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A49F023A1C07200016450 /* ScrabbleKeyboard.swift */; };
 		C9CB1C2323A1AA75002B0C00 /* ScrabbleKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB1C2223A1AA75002B0C00 /* ScrabbleKey.swift */; };
 		F71F6B6E21B35D0F0093EDDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F6B6D21B35D0F0093EDDB /* AppDelegate.swift */; };
 		F71F6B7321B35D0F0093EDDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71F6B7121B35D0F0093EDDB /* Main.storyboard */; };
 		F71F6B7521B35D110093EDDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F71F6B7421B35D110093EDDB /* Assets.xcassets */; };
 		F71F6B7821B35D110093EDDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71F6B7621B35D110093EDDB /* LaunchScreen.storyboard */; };
-		F71F6BA421B48B5E0093EDDB /* scrabbleKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F6BA321B48B5E0093EDDB /* scrabbleKeyboardTests.swift */; };
+		F71F6BA421B48B5E0093EDDB /* ScrabbleKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F6BA321B48B5E0093EDDB /* ScrabbleKeyboardTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C95291E023A431C00069ADB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F71F6B6221B35D0F0093EDDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F71F6B6921B35D0F0093EDDB;
+			remoteInfo = "scrabble-keyboard";
+		};
 		F71F6BA621B48B5E0093EDDB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F71F6B6221B35D0F0093EDDB /* Project object */;
@@ -27,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C95291DB23A431C00069ADB4 /* scrabble-keyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "scrabble-keyboardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C95291DD23A431C00069ADB4 /* scrabble_keyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrabble_keyboardUITests.swift; sourceTree = "<group>"; };
+		C95291DF23A431C00069ADB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C97A49F023A1C07200016450 /* ScrabbleKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabbleKeyboard.swift; sourceTree = "<group>"; };
 		C9CB1C2223A1AA75002B0C00 /* ScrabbleKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabbleKey.swift; sourceTree = "<group>"; };
 		F71F6B6A21B35D0F0093EDDB /* scrabble-keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scrabble-keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,11 +47,18 @@
 		F71F6B7721B35D110093EDDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F71F6B7921B35D110093EDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F71F6BA121B48B5E0093EDDB /* scrabbleKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scrabbleKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F71F6BA321B48B5E0093EDDB /* scrabbleKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrabbleKeyboardTests.swift; sourceTree = "<group>"; };
+		F71F6BA321B48B5E0093EDDB /* ScrabbleKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabbleKeyboardTests.swift; sourceTree = "<group>"; };
 		F71F6BA521B48B5E0093EDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C95291D823A431C00069ADB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F71F6B6721B35D0F0093EDDB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,11 +76,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C95291DC23A431C00069ADB4 /* scrabble-keyboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C95291DD23A431C00069ADB4 /* scrabble_keyboardUITests.swift */,
+				C95291DF23A431C00069ADB4 /* Info.plist */,
+			);
+			path = "scrabble-keyboardUITests";
+			sourceTree = "<group>";
+		};
 		F71F6B6121B35D0F0093EDDB = {
 			isa = PBXGroup;
 			children = (
 				F71F6B6C21B35D0F0093EDDB /* scrabble-keyboard */,
 				F71F6BA221B48B5E0093EDDB /* scrabbleKeyboardTests */,
+				C95291DC23A431C00069ADB4 /* scrabble-keyboardUITests */,
 				F71F6B6B21B35D0F0093EDDB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +100,7 @@
 			children = (
 				F71F6B6A21B35D0F0093EDDB /* scrabble-keyboard.app */,
 				F71F6BA121B48B5E0093EDDB /* scrabbleKeyboardTests.xctest */,
+				C95291DB23A431C00069ADB4 /* scrabble-keyboardUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,7 +122,7 @@
 		F71F6BA221B48B5E0093EDDB /* scrabbleKeyboardTests */ = {
 			isa = PBXGroup;
 			children = (
-				F71F6BA321B48B5E0093EDDB /* scrabbleKeyboardTests.swift */,
+				F71F6BA321B48B5E0093EDDB /* ScrabbleKeyboardTests.swift */,
 				F71F6BA521B48B5E0093EDDB /* Info.plist */,
 			);
 			path = scrabbleKeyboardTests;
@@ -102,6 +131,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C95291DA23A431C00069ADB4 /* scrabble-keyboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C95291E223A431C00069ADB4 /* Build configuration list for PBXNativeTarget "scrabble-keyboardUITests" */;
+			buildPhases = (
+				C95291D723A431C00069ADB4 /* Sources */,
+				C95291D823A431C00069ADB4 /* Frameworks */,
+				C95291D923A431C00069ADB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C95291E123A431C00069ADB4 /* PBXTargetDependency */,
+			);
+			name = "scrabble-keyboardUITests";
+			productName = "scrabble-keyboardUITests";
+			productReference = C95291DB23A431C00069ADB4 /* scrabble-keyboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F71F6B6921B35D0F0093EDDB /* scrabble-keyboard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F71F6B9221B35D110093EDDB /* Build configuration list for PBXNativeTarget "scrabble-keyboard" */;
@@ -143,10 +190,14 @@
 		F71F6B6221B35D0F0093EDDB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Dondi;
 				TargetAttributes = {
+					C95291DA23A431C00069ADB4 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = F71F6B6921B35D0F0093EDDB;
+					};
 					F71F6B6921B35D0F0093EDDB = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1120;
@@ -173,11 +224,19 @@
 			targets = (
 				F71F6B6921B35D0F0093EDDB /* scrabble-keyboard */,
 				F71F6BA021B48B5E0093EDDB /* scrabbleKeyboardTests */,
+				C95291DA23A431C00069ADB4 /* scrabble-keyboardUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C95291D923A431C00069ADB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F71F6B6821B35D0F0093EDDB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +257,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C95291D723A431C00069ADB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95291DE23A431C00069ADB4 /* scrabble_keyboardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F71F6B6621B35D0F0093EDDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,13 +279,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F71F6BA421B48B5E0093EDDB /* scrabbleKeyboardTests.swift in Sources */,
+				F71F6BA421B48B5E0093EDDB /* ScrabbleKeyboardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C95291E123A431C00069ADB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F71F6B6921B35D0F0093EDDB /* scrabble-keyboard */;
+			targetProxy = C95291E023A431C00069ADB4 /* PBXContainerItemProxy */;
+		};
 		F71F6BA721B48B5E0093EDDB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F71F6B6921B35D0F0093EDDB /* scrabble-keyboard */;
@@ -246,6 +318,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C95291E323A431C00069ADB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "scrabble-keyboardUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mt.scrabble-keyboardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "scrabble-keyboard";
+			};
+			name = Debug;
+		};
+		C95291E423A431C00069ADB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "scrabble-keyboardUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mt.scrabble-keyboardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "scrabble-keyboard";
+			};
+			name = Release;
+		};
 		F71F6B9021B35D110093EDDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -443,6 +553,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C95291E223A431C00069ADB4 /* Build configuration list for PBXNativeTarget "scrabble-keyboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C95291E323A431C00069ADB4 /* Debug */,
+				C95291E423A431C00069ADB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F71F6B6521B35D0F0093EDDB /* Build configuration list for PBXProject "scrabble-keyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,7 +1,7 @@
 import XCTest
 @testable import scrabble_keyboard
 
-class scrabbleKeyboardTests: XCTestCase {
+class ScrabbleKeyboardTests: XCTestCase {
 
     func testScrabbleKeyStartsWithCorrectInitialValues() {
         let scrabbleKey = ScrabbleKey()
@@ -26,19 +26,5 @@ class scrabbleKeyboardTests: XCTestCase {
         
         scrabbleKey.scrabbleKeyLetterColor = .green
         XCTAssertEqual(scrabbleKey.textLayer.foregroundColor, UIColor.green.cgColor, "Text color should go to text layer")
-    }
-}
-
-// A real UITouch object is pretty involved, so we instead define this mock touch class in order to set
-// just the values that we need.
-class MockTouch: UITouch {
-    var mockLocation: CGPoint = CGPoint(x: 0, y: 0)
-
-    init(withMockLocation location: CGPoint) {
-        mockLocation = location
-    }
-
-    override func location(in view: UIView?) -> CGPoint {
-        return mockLocation
     }
 }
