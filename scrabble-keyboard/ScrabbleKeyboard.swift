@@ -3,25 +3,24 @@ import Foundation
 
 @IBDesignable class ScrabbleKeyboard: UIView {
     
-    var keys: [ScrabbleKey]
-      
+    var keys: [ScrabbleKey] = []
+    var textField: UITextField!
+
     override init(frame: CGRect) {
-        self.keys = []
         super.init(frame: frame)
         setupView()
     }
 
     required init?(coder aDecoder: NSCoder) {
-        self.keys = []
         super.init(coder: aDecoder)
         setupView()
     }
     
     private func setupView() {
+        setupTextField()
         setupLabel()
         setupKeys()
         setupStackView()
-        setupTextField()
     }
 
     private func setupLabel() {
@@ -96,16 +95,54 @@ import Foundation
     }
     
     private func setupTextField() {
-        let textField = UITextField(frame: CGRect(x: 0, y: 0, width: 250.0, height: 40))
+        textField = UITextField(frame: CGRect(x: 0, y: 0, width: 250.0, height: 40))
         textField.placeholder = "Drag and drop a key here"
         textField.borderStyle = UITextField.BorderStyle.roundedRect
         textField.textAlignment = NSTextAlignment.justified
         textField.inputView = UIView() // this disables the keyboard pop up!
         textField.translatesAutoresizingMaskIntoConstraints = false
 
+         // this disables the default drop interaction
+        if let defaultDrop = textField.textDropInteraction {
+            textField.removeInteraction(defaultDrop)
+        }
+        
+        let dropInteraction = UIDropInteraction(delegate: self)
+        textField.addInteraction(dropInteraction)
+        
         addSubview(textField)
+        textField.heightAnchor.constraint(greaterThanOrEqualToConstant: 40).isActive = true
         textField.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.7).isActive = true
         textField.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         textField.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -100).isActive = true
+    }
+}
+
+extension ScrabbleKeyboard: UIDropInteractionDelegate {
+    func dropInteraction(_ interaction: UIDropInteraction, canHandle session: UIDropSession) -> Bool {
+        // Ensure the drop session has an object of the appropriate type
+        return session.canLoadObjects(ofClass: String.self)
+    }
+
+    func dropInteraction(_ interaction: UIDropInteraction, sessionDidUpdate session: UIDropSession) -> UIDropProposal {
+        // Propose to the system to copy the item from the source app
+        return UIDropProposal(operation: .copy)
+    }
+    
+    func dropInteraction(_ interaction: UIDropInteraction, performDrop session: UIDropSession) {
+        self.textField.becomeFirstResponder()
+        session.loadObjects(ofClass: String.self) { strings in
+            if strings.first != nil {
+                switch strings.first {
+                case "Delete":
+                    let currentString = self.textField.text!
+                    self.textField.text = String(currentString[..<currentString.index(before:currentString.endIndex)])
+                case "Space":
+                    self.textField.text = self.textField.text! + " "
+                default:
+                    self.textField.text = self.textField.text! + strings.first!
+                }
+            }
+        }
     }
 }
