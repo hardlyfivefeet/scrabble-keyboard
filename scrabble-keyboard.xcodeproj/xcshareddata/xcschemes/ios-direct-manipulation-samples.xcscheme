@@ -53,8 +53,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F71F6BA021B48B5E0093EDDB"
-               BuildableName = "swivelTests.xctest"
-               BlueprintName = "swivelTests"
+               BuildableName = "scrabbleKeyboardTests.xctest"
+               BlueprintName = "scrabbleKeyboardTests"
                ReferencedContainer = "container:scrabble-keyboard.xcodeproj">
             </BuildableReference>
          </TestableReference>

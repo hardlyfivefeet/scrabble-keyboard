@@ -3,7 +3,6 @@ import UIKit
 
 @IBDesignable class ScrabbleKey: UIView {
 
-    var currentTouch: UITouch? = nil
     // We will manipulate a drawing layer as the component's "view."
     var scrabbleLayer = CALayer()
     var textLayer = DynamicTextLayer()
